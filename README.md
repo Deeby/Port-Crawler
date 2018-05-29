@@ -170,3 +170,8 @@ In order for the web gallery to work, the screenshots directory needs to be acce
 
 
 Once the script has been run you will be able to view your screenshots from a web based gallery on your server with the URL http://ip-or-hostname/screenshots/gallery.html.
+
+
+### Run the script:
+
+`./scanner.sh`
