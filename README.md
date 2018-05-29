@@ -175,3 +175,9 @@ Once the script has been run you will be able to view your screenshots from a we
 ### Run the script:
 
 `./scanner.sh`
+
+
+
+## Additional Information:
+
+`scanner.sh` was built with the intention to run as a cron job. In order to conserve disk space, it will not overwrite screenshots with the same name. I would recommend setting up a cronjob to remove the screenshots directory on a regular basis (perhaps a weekly basis) so that way the screenshots are refreshed periodically -- assuming you can afford the bandwidth.
