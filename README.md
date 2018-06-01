@@ -27,7 +27,6 @@ Chrome must be installed on the host: [https://www.google.com/chrome/](https://w
 
 ## Installation on Ubuntu:
 
-
 ### Install Elasticsearch and Kibana:
 
 Install Java:
@@ -124,6 +123,13 @@ sudo apt-get install python-pip
 sudo pip install jsonpyes
 ```
 
+
+### Install jq:
+
+```
+sudo apt-get update
+sudo apt-get install jq
+```
 
 
 
