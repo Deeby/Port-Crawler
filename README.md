@@ -104,7 +104,8 @@ sudo systemctl start kibana.service
 
 ```
 sudo su -
-apt-get install git gcc make clang libpcap-dev
+sudo apt-get install git gcc make clang libpcap-dev
+sudo chown -R "$USER:$USER" /opt
 cd /opt
 git clone https://github.com/robertdavidgraham/masscan
 cd masscan
@@ -129,6 +130,16 @@ sudo pip install jsonpyes
 ```
 sudo apt-get update
 sudo apt-get install jq
+```
+
+
+### Download Port-Crawler
+
+```
+sudo chown -R "$USER:$USER" /opt
+cd /opt
+git clone https://github.com/heywoodlh/Port-Crawler
+cd Port-Crawler
 ```
 
 
