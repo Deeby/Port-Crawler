@@ -14,6 +14,7 @@ BLANK_MASTER="./blank-master.png"
 
 
 ###Optional variables
+EXTRA_MASSCAN_FLAGS=''
 WEB_SERVER='false'
 WEB_SERVER_USER='www-data'
 
@@ -26,7 +27,7 @@ COMPLETE_FILE="$DATE$FILE_EXT"
 
 
 function driver {
-	"$MASSCAN" "$IP_RANGE" -p "$(cat $PORTFILE)" --banners -oJ "$COMPLETE_FILE"
+	"$MASSCAN" "$IP_RANGE" -p "$(cat $PORTFILE)" --banners -oJ "$COMPLETE_FILE" "$EXTRA_MASSCAN_FLAGS"
 
 
 	sed '1d; $d' "$COMPLETE_FILE" > "$DATE"
