@@ -104,7 +104,7 @@ sudo systemctl start kibana.service
 
 ```
 sudo su -
-apt-get install git gcc make libpcap-dev
+apt-get install git gcc make clang libpcap-dev
 cd /opt
 git clone https://github.com/robertdavidgraham/masscan
 cd masscan
