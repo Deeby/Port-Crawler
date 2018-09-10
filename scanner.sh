@@ -12,12 +12,12 @@ ELASTICSEARCH_INDEX="portcrawler-$(date '+%Y-%m-%d_%H:%M')"
 WEB_SERVER='false'
 WEB_SERVER_USER='www-data'
 SCREENSHOT_DIR='/opt/Port-Crawler/screenshots'
-PORTFILE="/opt/Port-Crawler/portfile.txt"
+PORTFILE='/opt/Port-Crawler/portfile.txt'
 MASSCAN='/usr/bin/masscan'
 JSONPYES='/usr/local/bin/jsonpyes'
 CHROME='/usr/bin/chromium-browser'
-BLANK_MASTER="./blank-master.png"
-
+BLANK_MASTER='/opt/Port-Crawler/blank-master.png'
+GALLERY_HTML='/opt/Port-Crawler/gallery.html'
 
 
 ###Do not edit below unless you know what you are doing
@@ -102,7 +102,7 @@ driver
 if [[ "$SCREENSHOT" == 'true' ]]
 then
 	screenshot
-	cp ./gallery.html "$SCREENSHOT_DIR"
+	cp "$GALLERY_HTML" "$SCREENSHOT_DIR"
 	if [[ "$WEB_SERVER" == 'true' ]]
 	then
 		chown -R "$WEB_SERVER_USER" "$SCREENSHOT_DIR"
