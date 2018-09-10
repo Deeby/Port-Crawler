@@ -7,7 +7,7 @@ ELASTICSEARCH='http://localhost:9200'
 
 
 ###Optional variables to edit (leave default if unsure)
-EXTRA_MASSCAN_FLAGS=''
+MASSCAN_RATE='100'
 ELASTICSEARCH_INDEX="portcrawler-$(date '+%Y-%m-%d_%H:%M')"
 WEB_SERVER='false'
 WEB_SERVER_USER='www-data'
@@ -29,8 +29,7 @@ COMPLETE_FILE="$DATE$FILE_EXT"
 
 
 function driver {
-	"$MASSCAN" "$IP_RANGE" -p "$(cat $PORTFILE)" --banners -oJ "$COMPLETE_FILE" "$EXTRA_MASSCAN_FLAGS"
-
+	"$MASSCAN" "$IP_RANGE" -p "$(cat $PORTFILE)" --banners -oJ "$COMPLETE_FILE" --rate "$MASSCAN_RATE"
 
 	sed '1d; $d' "$COMPLETE_FILE" > "$DATE"
 	sed 's/.$//' "$DATE" > "$COMPLETE_FILE"
