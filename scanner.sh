@@ -1,22 +1,24 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ###Edit these variables
-MASSCAN='/usr/bin/masscan'
-JSONPYES='/usr/local/bin/jsonpyes'
-CHROME='/usr/bin/google-chrome'
 IP_RANGE='192.168.1.0/24 192.168.2.0/24'
-PORTFILE="./portfile.txt"
-SCREENSHOT_DIR='./screenshots'
 SCREENSHOT='true'
 ELASTICSEARCH='http://localhost:9200'
-ELASTICSEARCH_INDEX="myindex-$(date '+%Y-%m-%d_%H:%M')"
+
+
+###Optional variables to edit (leave default if unsure)
+EXTRA_MASSCAN_FLAGS=''
+ELASTICSEARCH_INDEX="portcrawler-$(date '+%Y-%m-%d_%H:%M')"
+WEB_SERVER='false'
+WEB_SERVER_USER='www-data'
+SCREENSHOT_DIR='./screenshots'
+PORTFILE="./portfile.txt"
+MASSCAN='/usr/bin/masscan'
+JSONPYES='/usr/local/bin/jsonpyes'
+CHROME='/usr/bin/chromium-browser'
 BLANK_MASTER="./blank-master.png"
 
 
-###Optional variables
-EXTRA_MASSCAN_FLAGS=''
-WEB_SERVER='false'
-WEB_SERVER_USER='www-data'
 
 ###Do not edit below unless you know what you are doing
 

@@ -133,6 +133,13 @@ sudo apt-get install jq
 ```
 
 
+### Install Chromium (for taking screenshots of web services):
+
+```
+sudo apt-get update
+sudo apt-get install chromium-browser
+```
+
 ### Download Port-Crawler
 
 ```
