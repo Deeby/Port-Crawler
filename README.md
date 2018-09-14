@@ -33,6 +33,11 @@ sudo chown -R "$USER:$USER" /opt
 cd /opt
 git clone https://github.com/heywoodlh/Port-Crawler
 cd Port-Crawler
+```
+
+Edit the first variable in `install.sh` `IP_OR_HOSTNAME` to equal the IP address or hostname that Kibana will be served on.
+
+```
 sudo ./install.sh
 ```
 
