@@ -19,13 +19,27 @@ This project is made possible by these other open source projects:
 
 
 
-## Requirements:
-Chrome must be installed on the host: [https://www.google.com/chrome/](https://www.google.com/chrome/)
 
 
 
+## Quick Installation on Ubuntu:
 
-## Installation on Ubuntu:
+### Run the install.sh script:
+
+The `install.sh` script has been provided to simplify installing dependencies. 
+
+```
+sudo chown -R "$USER:$USER" /opt
+cd /opt
+git clone https://github.com/heywoodlh/Port-Crawler
+cd Port-Crawler
+sudo ./install.sh
+```
+
+Once the `install.sh` script has run, just configure `scanner.sh` (refer to section below regarding that).
+
+
+## Manual Installation
 
 ### Install Elasticsearch and Kibana:
 
@@ -149,7 +163,7 @@ cd Port-Crawler
 
 
 
-### Configure scanner.sh
+## Configure scanner.sh
 
 Edit `portfile.txt` to contain each port/port range that you would like to scan, comma separated.
 
