@@ -33,7 +33,7 @@ function driver {
 
 	sed '1d; $d' "$COMPLETE_FILE" > "$DATE"
 	sed 's/.$//' "$DATE" > "$COMPLETE_FILE"
-
+	sed -i 's/$/ }/' "$COMPLETE_FILE"
 	rm "$DATE"
 
 	"$JSONPYES" --data "$COMPLETE_FILE" --bulk "$ELASTICSEARCH" --import --index "$ELASTICSEARCH_INDEX" --type scan  --check --thread 8
