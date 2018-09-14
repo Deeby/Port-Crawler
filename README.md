@@ -103,7 +103,6 @@ sudo systemctl start kibana.service
 ### Install Masscan:
 
 ```
-sudo su -
 sudo apt-get install git gcc make clang libpcap-dev
 sudo chown -R "$USER:$USER" /opt
 cd /opt
