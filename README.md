@@ -110,7 +110,6 @@ git clone https://github.com/robertdavidgraham/masscan
 cd masscan
 make
 sudo cp bin/masscan /usr/bin/
-exit
 ```
 
 
