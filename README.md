@@ -197,12 +197,12 @@ Once the script has been run you will be able to view your screenshots from a we
 
 ### Run the script manually:
 
-`./scanner.sh`
+`sudo ./scanner.sh`
 
 
 ### Set the script to run as a cron at 1:00 a.m. every day:
 
-Add this entry to your crontab (`crontab -e`):
+Add this entry to your root crontab (`sudo crontab -e`):
 
 `0 1 * * * /opt/Port-Crawler/scanner.sh`
 
