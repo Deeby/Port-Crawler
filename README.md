@@ -3,24 +3,6 @@ Port scanning scripts powered by Masscan to provide functionality similar to Sho
 
 Currently only tested on Ubuntu 16.04.
 
-## Credit:
-
-This project is made possible by these other open source projects:
-
-[Masscan](https://github.com/robertdavidgraham/masscan)
-
-[Elasticsearch](https://github.com/elastic/elasticsearch)
-
-[Kibana](https://github.com/elastic/kibana)
-
-[jsonpyes](https://github.com/xros/jsonpyes)
-
-[ThinGallery](https://github.com/gfwilliams/ThinGallery)
-
-
-
-
-
 
 ## Quick Installation on Ubuntu:
 
